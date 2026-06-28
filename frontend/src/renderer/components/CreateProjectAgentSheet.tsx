@@ -132,7 +132,7 @@ export function RequiredAgentField({
 				<SelectTrigger id={id} className="h-8 w-full text-[13px]" aria-invalid={invalid || undefined}>
 					<SelectValue placeholder={placeholder} />
 				</SelectTrigger>
-				<SelectContent>
+				<SelectContent position="popper">
 					{AGENT_OPTIONS.map((agent) => (
 						<SelectItem key={agent} value={agent}>
 							{agent}

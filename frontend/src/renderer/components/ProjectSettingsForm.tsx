@@ -251,7 +251,7 @@ function PermissionModeSelect({
 			<SelectTrigger id={id} className="h-8 w-full text-[13px]">
 				<SelectValue />
 			</SelectTrigger>
-			<SelectContent>
+			<SelectContent position="popper">
 				<SelectItem value="__default__">Project default</SelectItem>
 				{PERMISSION_MODE_OPTIONS.map((opt) => (
 					<SelectItem key={opt.value} value={opt.value}>
@@ -269,7 +269,7 @@ function ReviewerSelect({ id, value, onChange }: { id: string; value: string; on
 			<SelectTrigger id={id} className="h-8 w-full text-[13px]">
 				<SelectValue />
 			</SelectTrigger>
-			<SelectContent>
+			<SelectContent position="popper">
 				<SelectItem value="__default__">Project default</SelectItem>
 				{REVIEWER_OPTIONS.map((reviewer) => (
 					<SelectItem key={reviewer} value={reviewer}>
